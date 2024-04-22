@@ -83,6 +83,30 @@
 /* Home BG Slideshow */
 
 @media only screen and (min-width : 722px) {
+  #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
+    background: url("../images/19.gif");
+  }
+}
+
+@media only screen and (max-width : 720px) {
+  #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
+    background: url("../images/10.gif");
+  }
+}
+
+@media only screen and (min-width : 722px) {
+  #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
+    background: url("../images/19.gif");
+  }
+}
+
+@media only screen and (max-width : 720px) {
+  #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
+    background: url("../images/20.gif");
+  }
+}
+
+/* @media only screen and (min-width : 722px) {
   #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
     background: url("../images/9.gif");
   }
@@ -92,7 +116,7 @@
   #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
     background: url("../images/10.gif");
   }
-}
+} */
 
 
 #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
@@ -105,7 +129,7 @@
 
 /* Home BG Slider */
 
-@media only screen and (min-width : 722px) {
+/* @media only screen and (min-width : 722px) {
   #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
     background: url("../images/9.gif");
   }
@@ -115,7 +139,9 @@
   #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
     background: url("../images/10.gif");
   }
-}
+} */
+
+
 
 
 #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(2) {
@@ -245,7 +271,7 @@
 }
 
 
-@media only screen and (min-width : 722px) {
+/* @media only screen and (min-width : 722px) {
   #venue1 {
     background-image: url("../images/13.gif");
     background-position: center bottom !important;
@@ -255,6 +281,36 @@
 @media only screen and (max-width : 720px) {
   #venue1 {
     background-image: url("../images/14.gif");
+    background-position: center bottom !important;
+  }
+
+} */
+
+@media only screen and (min-width : 722px) {
+  #venue1 {
+    background-image: url("../images/22.gif");
+    background-position: center bottom !important;
+  }
+}
+
+@media only screen and (max-width : 720px) {
+  #venue1 {
+    background-image: url("../images/21.gif");
+    background-position: center bottom !important;
+  }
+
+}
+
+@media only screen and (min-width : 722px) {
+  #venue2 {
+    background-image: url("../images/17.gif");
+    background-position: center bottom !important;
+  }
+}
+
+@media only screen and (max-width : 720px) {
+  #venue2 {
+    background-image: url("../images/18.gif");
     background-position: center bottom !important;
   }
 
