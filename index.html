@@ -20,6 +20,7 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="res/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="res/css/cr.scss"> -->
 
   <!-- Font Icons -->
   <link rel="stylesheet" href="res/css/font-awesome.min.css">
@@ -59,10 +60,10 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand font-family-alt letter-spacing-1 text-extra-large text-uppercase" href="/">
+          <!-- <a class="navbar-brand font-family-alt letter-spacing-1 text-extra-large text-uppercase" href="/">
             <img class="logo-navbar-dark" src="res/images/logos/dark.png" alt="gemagembirafest"/>
             <img class="logo-navbar-white" src="res/images/logos/light.png" alt="gemagembirafest"/>
-          </a>
+          </a> -->
         </div>
         <!-- //.navbar-header -->
 
@@ -175,166 +176,160 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
-              <style>
-                .items {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  user-select: none;
-}
+                <style>
+                    
+                    .mySlides1 {display: none}
+                    img {vertical-align: middle;}
+                    
+                    /* Slideshow container */
+                    .slideshow-container {
+                      max-width: 1000px;
+                      position: relative;
+                      margin: auto;
+                    }
+                    
+                    /* Next & previous buttons */
+                    .prev1, .next1 {
+                      cursor: pointer;
+                      position: absolute;
+                      top: 50%;
+                      width: auto;
+                      padding: 16px;
+                      margin-top: -22px;
+                      color: white;
+                      font-weight: bold;
+                      font-size: 18px;
+                      transition: 0.6s ease;
+                      border-radius: 0 3px 3px 0;
+                      user-select: none;
+                      background-color: rgba(0,0,0,0.8);
+                    }
+                    
+                    /* Position the "next button" to the right */
+                    .next1 {
+                      right: 0;
+                      border-radius: 3px 0 0 3px;
+                    }
+                    
+                    /* On hover, add a black background color with a little bit see-through */
+                    .prev1:hover, .next1:hover {
+                      background-color: rgba(0,0,0,0.8);
+                    }
+                    
+                    /* Caption text */
+                    .text {
+                      color: #f2f2f2;
+                      font-size: 15px;
+                      padding: 8px 12px;
+                      position: absolute;
+                      bottom: 8px;
+                      width: 100%;
+                      text-align: center;
+                    }
+                    
+                    /* Number text (1/3 etc) */
+                    .numbertext {
+                      color: #f2f2f2;
+                      font-size: 12px;
+                      padding: 8px 12px;
+                      position: absolute;
+                      top: 0;
+                    }
+                    
+                    /* The dots/bullets/indicators */
+                    .dot1 {
+                      cursor: pointer;
+                      height: 15px;
+                      width: 15px;
+                      margin: 0 2px;
+                      background-color: #bbb;
+                      border-radius: 50%;
+                      display: inline-block;
+                      transition: background-color 0.6s ease;
+                    }
+                    
+                    .active, .dot1:hover {
+                      background-color: #717171;
+                    }
+                    
+                    /* Fading animation */
+                    .fade1 {
+                      animation-name: fade;
+                      animation-duration: 1.5s;
+                    }
+                    
+                    @keyframes fade {
+                      from {opacity: .4} 
+                      to {opacity: 1}
+                    }
+                    
+                    /* On smaller screens, decrease text size */
+                    @media only screen and (max-width: 300px) {
+                      .prev1, .next1,.text {font-size: 11px}
+                    }
+                    </style>
 
-.items .item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: all 300ms ease-in-out;
-  z-index: -1;
-  opacity: 0;
-}
+                <div class="slideshow-container">
 
-.item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.item.active {
-  opacity: 1;
-  z-index: 99;
-  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-}
-
-.item.prev {
-  z-index: 2;
-  opacity: 0.25;
-  transform: translate(-125%, -50%);
-}
-
-.item.next {
-  z-index: 2;
-  opacity: 0.25;
-  transform: translate(25%, -50%);
-}
-
-.items .button-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 275px;
-  z-index: 100;
-}
-
-.button-container .button {
-  color: #fff;
-  font-size: 32px;
-  cursor: pointer;
-  position: relative;
-  opacity: 0.75;
-  transition: all 300ms ease-in-out;
-}
-
-.button-container .button:hover {
-  opacity: 1;
-}
-
-.button-container .button:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 1);
-  border-radius: 50%;
-  z-index: -99;
-}
-
-.button-container .button:nth-child(1) {
-  float: left;
-}
-
-.button-container .button:nth-child(2) {
-  float: right;
-}
-              </style>
+                    <div class="mySlides1 fade1">
+                      <!-- <div class="numbertext">1 / 3</div> -->
+                      <img src="res/images/PhotoRS3.png" style="width:100%">
+                      <!-- <div class="text">Caption Text</div> -->
+                    </div>
+                    
+                    <div class="mySlides1 fade1">
+                      <!-- <div class="numbertext">2 / 3</div> -->
+                      <img src="res/images/changcuters.png" style="width:100%">
+                      <!-- <div class="text">Caption Two</div> -->
+                    </div>
+                    
+                    <div class="mySlides1 fade1">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="res/images/sigit.png" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+                    
+                    <a class="prev1" onclick="plusSlides(-1)">❮</a>
+                    <a class="next1" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot1" onclick="currentSlide(1)"></span> 
+                      <span class="dot1" onclick="currentSlide(2)"></span> 
+                      <span class="dot1" onclick="currentSlide(3)"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides1");
+                      let dots = document.getElementsByClassName("dot1");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
             
-              <div class="items">
-                <div class="item active">
-                  <img src="res/images/panturas.png">
-                </div>
-                <div class=" item next">
-                  <img src="res/images/rs.png">
-                </div>
-                <div class="item">
-                  <img src="res/images/cdr.png">
-                </div>
-                <div class="item">
-                  <img src="res/images/rc.png">
-                </div>
-                <div class="item prev">
-                  <img src="res/images/tc.png">
-                </div>
-                <div class="item prev">
-                  <img src="res/images/tx.png">
-                </div>
-                <div class="button-container">
-                  <div class="button"><i class="fa fa-angle-left"></i></div>
-                  <div class="button"><i class="fa fa-angle-right"></i></div>
-                </div>
-              </div> 
-
-              <script>
-                // I will be creating a different pen with touch support but right // now I have no time for it due to school
-
-const slider = document.querySelector(".items");
-		const slides = document.querySelectorAll(".item");
-		const button = document.querySelectorAll(".button");
-
-		let current = 0;
-		let prev = 5;
-		let next = 1;
-
-		for (let i = 0; i < button.length; i++) {
-			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
-		}
-
-		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-		const gotoNext = () => current < 5 ? gotoNum(current + 1) : gotoNum(0);
-
-		const gotoNum = number => {
-			current = number;
-			prev = current - 1;
-			next = current + 1;
-
-			for (let i = 0; i < slides.length; i++) {
-				slides[i].classList.remove("active");
-				slides[i].classList.remove("prev");
-				slides[i].classList.remove("next");
-			}
-
-			if (next == 6) {
-				next = 0;
-			}
-
-			if (prev == -1) {
-				prev = 5;
-			}
-
-			slides[current].classList.add("active");
-			slides[prev].classList.add("prev");
-			slides[next].classList.add("next");
-		}
-              </script>
-
             </div>
             <!-- //.col-md-8 -->
           </div>
@@ -348,7 +343,7 @@ const slider = document.querySelector(".items");
 
 
     <!-- Section - Parallax banner start -->
-    <section id="home-bg-parallax" class="height-50 no-padding overflow-hidden width-100">
+    <section id="home-bg-parallax" class="bg-overlay-black-4 height-50 no-padding overflow-hidden width-100">
       <!-- BG Parallax -->
       <div class="bg-parallax  width-100"></div>
   
@@ -397,6 +392,37 @@ const slider = document.querySelector(".items");
       <!-- //.display-table -->
     </section>
     <!-- //Section - Parallax banner end -->
+
+
+    <!-- Section - lineup Start -->
+  <section id="venue2" class="bg-cover bg-overlay-black-4 display-table height-100 no-padding width-100">
+    <div class="display-table-cell vertical-align-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h3 class="display-block font-family-alt font-weight-900 letter-spacing-2 text-uppercase text-white xs-title-extra-large-4 title-extra-large-4">
+              EARLY BIRD
+            </h3>
+            <br>
+            <!-- <p class="font-family-alt letter-spacing-1 margin-3 no-margin-bottom no-margin-rl text-white xs-title-small title-large text-uppercase font-weight-700">
+             Rp 85K
+            </p> -->
+            <br>
+            <a href="" target="_blank"
+                class="btn btn-outline-white sm-btn-medium btn-large margin-4-5 no-margin-bottom no-margin-rl">
+              BUY TICKETS
+            </a>
+          </div>
+          <!-- //.col-md-8 -->
+        </div>
+        <!-- //.row -->
+      </div>
+      <!-- //.container -->
+    </div>
+    <!-- //.display-table-cell -->
+  </section>
+  <!-- //Section - Venue End -->
+
 
     <!-- Section - About Start -->
     <section id="about" class="bg-white-3 pull-up">
@@ -467,85 +493,6 @@ comfortable, quiet and sustainable manner.
       <!-- //.container -->
     </section>
     <!-- //Section - About End -->
-
-
-  <!-- Section - Social start -->
-  <section id="social" class="bg-gray-light-2 pull-up">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">
-            Connect with us
-          </h2>
-          <span class="bg-base-color margin-4 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span>
-        </div>
-      </div>
-      <!-- //.row -->
-      <br><br>
-      <div class="display-table height-100 position-absolute position-top position-left width-100">
-        <div class="display-table-cell vertical-align-middle">
-          <div class="container">
-           
-            <div class="row">
-              
-            </div>
-            <!-- //.row -->
-          </div>
-          <!-- //.container -->
-        </div>
-        <!-- //.display-table-cell -->
-      </div>
-      <div class="row">
-        
-
-        <!-- Social Box -->
-        <div class="">
-          <div class="border border-gray-light border-round box-shadow-yes position-relative bg-white">
-            <div class="display-table-cell vertical-align-middle">
-              <div class="display-table-cell no-padding-tb padding-8 vertical-align-middle">
-                <!-- <span class="display-block font-weight-700 letter-spacing-1 text-large text-uppercase margin-4 no-margin-rl no-margin-top text-center">
-                  Instagram
-                </span> -->
-
-                <style>
-                  @media only screen and (min-width : 722px) {
-                    .ighm{
-                      position: relative; 
-                      width: 52vw;
-                    }
-                  }
-
-                  @media only screen and (max-width : 720px) {
-
-                    .ighm{
-                      position: relative; 
-                      left: -8.3vw;
-                      width: 100vw;
-                    }
-                  }
-                </style>
-
-                <!-- Instagram posts -->
-                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-                <div class="ighm">
-                  <div class="elfsight-app-8dde8c9e-f9ca-4129-b960-afdac99dbd3c" data-elfsight-app-lazy></div>
-                </div>
-                
-                <!-- //Instagram posts -->
-              </div>
-              <!-- //.display-table-cell -->
-            </div>
-            <!-- //.display-table -->
-          </div>
-          <!-- //.border -->
-        </div>
-        <!-- //Social Box -->
-      </div>
-      <!-- //.row -->
-    </div>
-    <!-- //.container -->
-  </section>
-  <!-- //Section - Social end -->
 
 
 
