@@ -505,7 +505,15 @@ comfortable, quiet and sustainable manner.
       <div class="row">
         <div class="col-sm-4">
           <div class="footer-logo xs-text-center">
-            <img src="res/images/logos/light.png" alt="">
+            <style>
+              @media only screen and (max-width : 720px) {
+                #img-ft {
+                  position: relative;
+                  left: 35px;
+                }
+              }
+            </style>
+            <img src="res/images/logos/light.png" alt="" id="img-ft">
           </div>
           <!-- //.footer-logo -->
           <p class="disclaimer xs-text-center">
